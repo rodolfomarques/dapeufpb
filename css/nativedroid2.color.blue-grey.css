@@ -2,7 +2,7 @@
  * Color Definition Sheet
  */
 
-.nd2-bg-500 { background-color: #607D8B; color: #ffffff; }
+.nd2-bg-500 { background-color: #E0E0E0; color: #ffffff; }
 
 /*
  * Custom Styles
@@ -10,7 +10,7 @@
  */
 
 .ui-page-theme-a .ui-header {
-	background-color: #607D8B;
+	background-color: #8AADC9;
 	color: #ffffff;
 }
 

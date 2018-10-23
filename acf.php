@@ -23,7 +23,7 @@ acf_add_local_field_group(array(
 			'placeholder' => 'Nome do Projeto',
 			'prepend' => '',
 			'append' => '',
-			'maxlength' => 15,
+			'maxlength' => '',
 		),
 		array(
 			'key' => 'field_5bce6b36e95fc',
