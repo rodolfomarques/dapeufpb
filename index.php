@@ -15,11 +15,12 @@
 						<p class="desc_perfil"><?php the_field(campo_atuacao);?></p>
 					</div>
 				</div>
-				<img src="https://picsum.photos/500/400?image=885" alt="" class="img_cartao">
+				<img src="<?php the_field(imagem_cartao);?>" alt="" class="img_cartao">
 				<!-- <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3> -->
-				<p class="desc_cartao"><?php the_content();?></p>
+				<div class="desc_cartao"><?php the_content();?></div>
 			</div>
 		</div>
+		<br>
 	<?php endwhile; else : ?>
 	<?php endif; ?>
 </div>
