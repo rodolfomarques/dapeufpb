@@ -1,0 +1,112 @@
+
+/*
+Theme Name: AgoraVai
+Theme URI: https://www.paulohsms.com/
+Description: Tema do agora vai.
+Author: Paulo Henrique
+Author URI: https://www.paulohsms.com/
+*/
+
+
+
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
+    z-index: 10000 !important;
+}
+
+.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
+    margin-left: 33px!important;
+}
+
+
+#menu-menu-do-painel li {
+	list-style-type: none !important;
+	margin: 1em;
+
+}
+
+.ui-title a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#wpadminbar {
+	display: none;
+}
+
+
+/* classes e estilos do cartão principal */
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 800px) 1fr;
+  background: black;
+  color:white;
+
+}
+
+.cartao {
+
+  grid-column-start: 2;
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 8fr) 1fr;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 0.5em;
+  width: 100%;
+  color: black;
+
+}
+
+.cabecario {
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: minmax(50px, 100px) 1fr;
+  grid-column-gap: 1em;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+
+}
+
+.cabecario_img {
+
+  width: 80%;
+
+}
+
+.img_perfil {
+
+  border-radius: 50%;
+  width: 100%;
+
+}
+
+.nome_perfil {
+
+  font-size: 1em;
+
+}
+
+.desc_perfil {
+
+  font-size: 0.8em;
+
+}
+
+
+.img_cartao {
+
+   width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.desc_cartao {
+
+  text-align: justify;
+  grid-column-start: 2;
+  grid-row-start: 3;
+
+}
