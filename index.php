@@ -2,31 +2,50 @@
 <?php get_header(); ?>
 
 <div data-role="page" id="pesquisa"> <!-- Início da Pagina da Pesquisa -->
-	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header">
-		<h1 class="wow fadeIn" data-wow-delay='0.4s'><a href="<?php bloginfo('url');?>" id="link_titulo"><?php bloginfo('name'); ?></a></h1>
-		<a href="#painel-esq" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-more-vert"></i></a>
-		<div class="row around-xs">
-			<div class="col-xs-2">
-					<div class="box">
+	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header-pesquisa">
+
+		<div class="row center-xs middle-xs">
+  		<div class="col-xs-3">
+      	<div class="box">
+          <h3 class="wow fadeIn" data-wow-delay='0.4s'>
+						<a href="#pesquisa" class="link_titulo"><?php bloginfo('name'); ?></a>
+					</h3>
+      	</div>
+	    </div>
+	    <div class="col-xs-5">
+	        <div class="box">
+	        </div>
+	    </div>
+	    <div class="col-xs-3">
+	        <div class="box ">
+	          <a href="#painel-pesquisa" class="ui-btn wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-more-vert"></i></a>
+	        </div>
+	    </div>
+		</div>
+
+		<div class="row center-xs center-md">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu box-selecao">
 						<a href="#pesquisa">Pesquisa</a>
 					</div>
 			</div>
-			<div class="col-xs-2">
-					<div class="box">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu">
 						<a href="#extensao">Extensão</a>
 					</div>
 			</div>
-			<div class="col-xs-2">
-					<div class="box">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu">
 						<a href="#editais">Editais</a>
 					</div>
 			</div>
 		</div>
 	</div>
 
-	<div data-role="panel" id="painel-esq" data-display="overlay" data-position-fixed="true" data-position="right" >
+	<div data-role="panel" id="painel-pesquisa" data-display="overlay" data-position-fixed="true" data-position="right" >
 		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
 	</div>
+
 	<div data-role="content" role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" id="content">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<?php if (get_field('campo_atuacao') == 'Pesquisa') : ?>
@@ -51,28 +70,46 @@
 
 <div data-role="page" id="extensao"> <!-- Início da Pagina da Extensão -->
 	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header">
-		<h1 class="wow fadeIn" data-wow-delay='0.4s'><a href="<?php bloginfo('url');?>" id="link_titulo"><?php bloginfo('name'); ?></a></h1>
-		<a href="#painel-esq" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-more-vert"></i></a>
-		<div class="row around-xs">
-			<div class="col-xs-2">
+		<div class="row center-xs middle-xs">
+			<div class="col-xs-3">
+				<div class="box">
+					<h3 class="wow fadeIn" data-wow-delay='0.4s'>
+						<a href="#pesquisa" class="link_titulo"><?php bloginfo('name'); ?></a>
+					</h3>
+				</div>
+			</div>
+			<div class="col-xs-5">
 					<div class="box">
+					</div>
+			</div>
+			<div class="col-xs-3">
+					<div class="box ">
+						<a href="#painel-extensao" class="ui-btn wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-more-vert"></i></a>
+					</div>
+			</div>
+		</div>
+
+		<div class="row center-xs center-md">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu ">
 						<a href="#pesquisa">Pesquisa</a>
 					</div>
 			</div>
-			<div class="col-xs-2">
-					<div class="box">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu box-selecao">
 						<a href="#extensao">Extensão</a>
 					</div>
 			</div>
-			<div class="col-xs-2">
-					<div class="box">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu">
 						<a href="#editais">Editais</a>
 					</div>
 			</div>
 		</div>
+
 	</div>
 
-	<div data-role="panel" id="painel-esq" data-display="overlay" data-position-fixed="true" data-position="right" >
+	<div data-role="panel" id="painel-extensao" data-display="overlay" data-position-fixed="true" data-position="right" >
 		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
 	</div>
 	<div data-role="content" role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" id="content">
@@ -99,28 +136,46 @@
 
 <div data-role="page" id="editais"> <!-- Início da Pagina da Editais -->
 	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header">
-		<h1 class="wow fadeIn" data-wow-delay='0.4s'><a href="<?php bloginfo('url');?>" id="link_titulo"><?php bloginfo('name'); ?></a></h1>
-		<a href="#painel-esq" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-more-vert"></i></a>
-		<div class="row around-xs">
-			<div class="col-xs-2">
+		<div class="row center-xs middle-xs">
+			<div class="col-xs-3">
+				<div class="box">
+					<h3 class="wow fadeIn" data-wow-delay='0.4s'>
+						<a href="#pesquisa" class="link_titulo"><?php bloginfo('name'); ?></a>
+					</h3>
+				</div>
+			</div>
+			<div class="col-xs-5">
 					<div class="box">
+					</div>
+			</div>
+			<div class="col-xs-3">
+					<div class="box ">
+						<a href="#painel-editais" class="ui-btn wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-more-vert"></i></a>
+					</div>
+			</div>
+		</div>
+
+		<div class="row center-xs center-md">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu">
 						<a href="#pesquisa">Pesquisa</a>
 					</div>
 			</div>
-			<div class="col-xs-2">
-					<div class="box">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu">
 						<a href="#extensao">Extensão</a>
 					</div>
 			</div>
-			<div class="col-xs-2">
-					<div class="box">
+			<div class="col-xs-4 col-md-4">
+					<div class="box box-menu box-selecao">
 						<a href="#editais">Editais</a>
 					</div>
 			</div>
 		</div>
+
 	</div>
 
-	<div data-role="panel" id="painel-esq" data-display="overlay" data-position-fixed="true" data-position="right" >
+	<div data-role="panel" id="painel-editais" data-display="overlay" data-position-fixed="true" data-position="right" >
 		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
 	</div>
 	<div data-role="content" role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" id="content">

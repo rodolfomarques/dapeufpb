@@ -65,6 +65,7 @@ acf_add_local_field_group(array(
 			'choices' => array(
 				'Pesquisa' => 'Pesquisa',
 				'Extensão' => 'Extensão',
+				'Editais' => 'Editais',
 			),
 			'default_value' => array(
 			),

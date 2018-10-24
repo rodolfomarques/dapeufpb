@@ -38,12 +38,7 @@ Author URI:
 /* estilizacão do Header */
 
 
-#link_titulo {
-
-  color: white;
-}
-
-div.box {
+div.box-menu {
 
   line-height: 1em;
   padding: 1em 0;
@@ -52,8 +47,62 @@ div.box {
 
 div.box a {
 
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 
+}
+
+div.box a:hover {
+
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+div.box-menu a:visited {
+
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.box-selecao {
+
+  border-bottom: 0.1em solid yellow;
+}
+
+div.box-selecao a {
+
+  color: rgba(255, 255, 255, 1);
+}
+
+div.box-selecao a:hover {
+
+  color: rgba(255, 255, 255, 1);
+}
+
+h3 a.link_titulo {
+
+  color: white;
+  text-transform: uppercase;
+}
+
+h3 a.link_titulo:hover {
+
+  color: white;
+  text-transform: uppercase;
+}
+
+h3 a.link_titulo:visited {
+
+  color: white;
+  text-transform: uppercase;
 }
 
 /* Estilizaćao do fundo */
