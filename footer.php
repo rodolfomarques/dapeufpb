@@ -1,6 +1,6 @@
 
-			
-		</div> <!-- fim da div data-role Page -->
+
+		
 
 		<!-- Dependências JS -->
 		<script src="<?php bloginfo('template_url');?>/js/jquery.min.js"></script>

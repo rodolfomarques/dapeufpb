@@ -19,37 +19,3 @@
  </head>
 	</head>
 	<body>
-
-		<div data-role="page">
-
-			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header">
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'><a href="<?php bloginfo('url');?>" id="link_titulo"><?php bloginfo('name'); ?></a></h1>
-				<a href="#painel-esq" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<div class="row around-xs">
-			    <div class="col-xs-2">
-			        <div class="box">
-			          <a href="#">Pesquisa</a>
-			        </div>
-			    </div>
-			    <div class="col-xs-2">
-			        <div class="box">
-			          <a href="#">Extensão</a>
-			        </div>
-			    </div>
-			    <div class="col-xs-2">
-			        <div class="box">
-			          <a href="#">Bolsas</a>
-			        </div>
-			    </div>
-				</div>
-			</div>
-
-			<div data-role="panel" id="painel-esq" data-display="overlay" data-position-fixed="true" >
-				<hr class="inset">
-				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
-					<h3>Menu Collapsible</h3>
-					<ul data-role="listview" data-icon="false">
-					<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
-					</ul>
-				</div>
-			</div>
