@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <div data-role="page" id="pesquisa"> <!-- Início da Pagina da Pesquisa -->
-	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header-pesquisa">
+	<div data-role="header" data-position="fixed" class="" data-wow-delay="" id="header-pesquisa">
 
 		<div class="row center-xs middle-xs">
   		<div class="col-xs-3">
@@ -42,8 +42,11 @@
 		</div>
 	</div>
 
-	<div data-role="panel" id="painel-pesquisa" data-display="overlay" data-position-fixed="true" data-position="right" >
-		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
+	<div data-role="panel" id="painel-pesquisa" data-display="overlay" data-position-fixed="true" data-position="right">
+		<div class="">
+      <h3 class="centros-titulo">Centros de Ensino</h3>
+    </div>
+		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => 'div', 'menu_class' => 'menu', 'items_wrap' => '%3$s') );?>
 	</div>
 
 	<div data-role="content" role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" id="content">
@@ -59,6 +62,9 @@
 					<img src="<?php the_field('imagem_cartao');?>" alt="" class="img_cartao">
 					<!-- <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3> -->
 					<div class="desc_cartao"><?php the_content();?></div>
+					<?php if ( is_active_sidebar( 'social_midias' ) ) : ?>
+						<?php dynamic_sidebar( 'social_midias' ); ?>
+					<?php endif ?>
 				</div>
 			</div>
 			<br>
@@ -69,7 +75,7 @@
 </div> <!-- fim da div data-role Pesquisa -->
 
 <div data-role="page" id="extensao"> <!-- Início da Pagina da Extensão -->
-	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header">
+	<div data-role="header" data-position="fixed" class="" data-wow-delay="" id="header">
 		<div class="row center-xs middle-xs">
 			<div class="col-xs-3">
 				<div class="box">
@@ -110,7 +116,10 @@
 	</div>
 
 	<div data-role="panel" id="painel-extensao" data-display="overlay" data-position-fixed="true" data-position="right" >
-		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
+		<div class="">
+      <h3 class="centros-titulo">Centros de Ensino</h3>
+    </div>
+		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => 'div', 'menu_class' => 'menu', 'items_wrap' => '%3$s') );?>
 	</div>
 	<div data-role="content" role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" id="content">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -135,7 +144,7 @@
 </div> <!-- fim da div data-role Extensão -->
 
 <div data-role="page" id="editais"> <!-- Início da Pagina da Editais -->
-	<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s" id="header">
+	<div data-role="header" data-position="fixed" class="" data-wow-delay="" id="header">
 		<div class="row center-xs middle-xs">
 			<div class="col-xs-3">
 				<div class="box">
@@ -176,7 +185,10 @@
 	</div>
 
 	<div data-role="panel" id="painel-editais" data-display="overlay" data-position-fixed="true" data-position="right" >
-		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => ' ', 'items_wrap' => '%3$s') );?>
+		<div class="">
+      <h3 class="centros-titulo">Centros de Ensino</h3>
+    </div>
+		<?php wp_nav_menu( array( 'theme_location' => 'painel-menu', 'container' => 'div', 'menu_class' => 'menu', 'items_wrap' => '%3$s') );?>
 	</div>
 	<div data-role="content" role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" id="content">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

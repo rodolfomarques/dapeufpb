@@ -34,6 +34,50 @@ Author URI:
 	display: none;
 }
 
+#sem_posts--titulo {
+
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 1em;
+}
+
+.centros-titulo {
+
+  text-align: right;
+  font-size: 1em;
+  padding-right: 1em;
+  color: #8aadcc;
+}
+
+#painel-pesquisa, #painel-extensao, #painel-editais {
+
+
+}
+
+.menu-centros-container {
+
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.5em 1em 0 2em;
+
+}
+
+.menu-centros-container li {
+
+  padding: 5px 0;
+
+}
+
+.menu-centros-container li a {
+
+  text-decoration: none;
+
+}
+
 
 /* estilizacão do Header */
 
@@ -188,4 +232,9 @@ h3 a.link_titulo:visited {
   font-size: 1em;
   color: rgba(0, 0, 0, 0.7);
 
+}
+
+.icon_redesSocias {
+
+  grid-column: 2/4;
 }
